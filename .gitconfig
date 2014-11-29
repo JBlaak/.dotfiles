@@ -1,0 +1,13 @@
+[user]
+	name = Joris Blaak
+	email = joris@label305.com
+[alias]
+	monsterpull = !sh -c 'git fetch $1 $2 && git checkout $2 && git pull $1 $2 && git submodule update --init --recursive && git remote prune $1' -
+	submodule update --init --recursive && git merge $2' -
+	fb = !sh -c 'git branch feature_$1 && git checkout feature_$1' -
+	hb = !sh -c 'git branch hotfix_$1 && git checkout hotfix_$1' -
+	hf = !sh -c 'git branch hotfix_$1 && git checkout hotfix_$1' -
+	f = !sh -c 'git branch fix_$1 && git checkout fix_$1' -
+	rmsubmodule = !sh -c 'git submodule deinit $1 && git rm $1' -
+[push]
+	default = matching
