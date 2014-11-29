@@ -2,6 +2,9 @@
 # Git (not so serious)
 alias wollah='git add . && git commit -am '
 alias whoop='git monsterpull origin '
+alias ga='git add .'
+alias gs='git status'
+alias gc='git commit -am'
 
 # Artisan
 alias art='php artisan --env=local'
@@ -16,6 +19,19 @@ alias behat='vendor/bin/behat'
 alias servebehat='php artisan serve --host=behat.localhost'
 alias rb='php artisan --env=testing migrate && php artisan --env=testing db:seed && grunt && vendor/bin/behat --verbose --stop-on-failure'
 alias sb='php artisan serve --host=behat.localhost'
+
+# Heroku
+alias hlog='heroku logs --tail'
+
+# Some locations
+alias ..='cd ..'
+alias ch='cd ~'
+alias home='cd ~'
+alias cdd='cd ~/Development'
+alias cdown='cd ~/Downloads'
+
+# Just handy
+alias la='ls -a'
 
 # setting the default editor to Sublime
 export EDITOR='subl -w'
