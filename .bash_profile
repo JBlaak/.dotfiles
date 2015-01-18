@@ -59,6 +59,9 @@ alias down='cd ~/Downloads'
 alias la='ls -a'
 alias c='clear'
 
+# Tar
+alias untar='tar -zxvf'
+
 # Apt-get
 alias uninstall='sudo apt-get remove'
 alias install='sudo apt-get install'
