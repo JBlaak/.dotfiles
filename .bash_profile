@@ -50,9 +50,10 @@ alias hlog='heroku logs --tail'
 # Some locations
 alias ..='cd ..'
 alias home='cd ~'
+alias h='cd ~'
 alias dev='cd ~/Development'
 alias downloads='cd ~/Downloads'
-
+alias down='cd ~/Downloads'
 
 # Just handy
 alias la='ls -a'
