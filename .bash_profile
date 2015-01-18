@@ -44,6 +44,7 @@ alias cdown='cd ~/Downloads'
 
 # Just handy
 alias la='ls -a'
+alias c='clear'
 
 # Apt-get
 alias uninstall='sudo apt-get remove'
