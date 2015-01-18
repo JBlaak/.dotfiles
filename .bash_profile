@@ -21,6 +21,12 @@ alias gp='git push origin `get_git_branch`'
 alias servstart='sudo service nginx start && sudo service mysql start'
 alias servstop='sudo service nginx stop && sudo service mysql stop'
 
+# Gcutil
+function gcutil_ssh() {
+	gcutil --project=$1 ssh $2
+}
+alias gssh=gcutil_ssh
+
 # Artisan
 alias art='php artisan --env=local'
 alias gm='php artisan --env=local generate:migration'
