@@ -33,6 +33,10 @@ alias cdown='cd ~/Downloads'
 # Just handy
 alias la='ls -a'
 
+# Apt-get
+alias uninstall='sudo apt-get remove'
+alias install='sudo apt-get install'
+
 # setting the default editor to Sublime
 export EDITOR='subl -w'
 
