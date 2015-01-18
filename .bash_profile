@@ -44,6 +44,18 @@ alias servebehat='php artisan serve --host=behat.localhost'
 alias rb='php artisan --env=testing migrate && php artisan --env=testing db:seed && grunt && vendor/bin/behat --verbose --stop-on-failure'
 alias sb='php artisan serve --host=behat.localhost'
 
+# Package managers
+alias ci='composer install'
+alias cu='composer update'
+alias cda='composer dump-autoload'
+alias cr='composer require --save'
+alias crd='composer require --save-dev'
+alias bi='bower install --save'
+alias bid='bower install --save-dev'
+alias bu='bower update'
+alias gr='grunt'
+alias grj='grunt jsx'
+
 # Heroku
 alias hlog='heroku logs --tail'
 
