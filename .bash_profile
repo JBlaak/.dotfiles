@@ -1,3 +1,13 @@
+# Functions
+function parse_git_dirty() {
+        [[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
+}
+function parse_git_branch() {
+        git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
+}
+function get_git_branch() {
+	echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+}
 
 # Git (not so serious)
 alias wollah='git add . && git commit -am '
@@ -5,6 +15,8 @@ alias whoop='git monsterpull origin '
 alias ga='git add .'
 alias gs='git status'
 alias gc='git commit -am'
+alias gp='git push origin `get_git_branch`'
+
 
 # Artisan
 alias art='php artisan --env=local'
@@ -51,13 +63,5 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Styling the PS1 (prefix etc. showing current git branch)
-function parse_git_dirty() {
-        [[ $(git status 2> /dev/null | tail -n1) != *"working directory clean"* ]] && echo "*"
-}
-
-function parse_git_branch() {
-        git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
-}
-
 export PS1="\n 😈  ${BLUE}\w\$([[ -n \$(git branch 2> /dev/null) ]] && echo \"  ${YELLOW}\")\$(parse_git_branch)\n${RESETCOLOR}→ "
 
