@@ -16,6 +16,9 @@ alias ga='git add .'
 alias gs='git status'
 alias gc='git commit -am'
 alias gp='git push origin `get_git_branch`'
+alias gl='git pull origin `get_git_branch`'
+alias gb='git branch'
+alias gpp='git remote prune origin'
 
 # Switching nginx and mysql on/off
 alias servstart='sudo service nginx start && sudo service mysql start'
