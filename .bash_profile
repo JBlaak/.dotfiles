@@ -17,6 +17,9 @@ alias gs='git status'
 alias gc='git commit -am'
 alias gp='git push origin `get_git_branch`'
 
+# Switching nginx and mysql on/off
+alias servstart='sudo service nginx start && sudo service mysql start'
+alias servstop='sudo service nginx stop && sudo service mysql stop'
 
 # Artisan
 alias art='php artisan --env=local'
