@@ -66,6 +66,7 @@ alias h='cd ~'
 alias dev='cd ~/Development'
 alias downloads='cd ~/Downloads'
 alias down='cd ~/Downloads'
+alias tools='cd ~/Tools'
 
 # Just handy
 alias la='ls -a'
