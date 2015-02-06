@@ -24,6 +24,9 @@ alias gpp='git remote prune origin'
 alias servstart='sudo service nginx start && sudo service mysql start'
 alias servstop='sudo service nginx stop && sudo service mysql stop'
 
+# Serve PHP files the simple way
+alias serve='php -S localhost:8090 -t ./'
+
 # Gcutil
 function gcutil_ssh() {
 	gcutil --project=$1 ssh $2
