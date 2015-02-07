@@ -37,6 +37,7 @@ alias gssh=gcutil_ssh
 alias art='php artisan --env=local'
 alias gm='php artisan --env=local generate:migration'
 alias artt='php artisan --env=testing'
+alias ams='php artisan migrate:refresh --seed'
 
 # PHPUnit testing
 alias rp='php artisan --env=testing migrate && php artisan --env=testing db:seed && phpunit --stop-on-error --stderr'
