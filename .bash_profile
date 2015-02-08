@@ -40,7 +40,7 @@ alias artt='php artisan --env=testing'
 alias ams='php artisan migrate:refresh --seed'
 
 # PHPUnit testing
-alias rp='php artisan --env=testing migrate && php artisan --env=testing db:seed && phpunit --stop-on-error --stderr'
+alias phpunit='./vendor/bin/phpunit'
 
 # Behat/selenium testing
 alias behat='vendor/bin/behat'
