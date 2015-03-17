@@ -61,6 +61,9 @@ alias bu='bower update'
 alias gr='grunt'
 alias grj='grunt jsx'
 
+# Nload defaults to 1992 speeds
+alias nload='nload -i 100000'
+
 # Heroku
 alias hlog='heroku logs --tail'
 
