@@ -58,8 +58,11 @@ alias crd='composer require --save-dev'
 alias bi='bower install --save'
 alias bid='bower install --save-dev'
 alias bu='bower update'
+
+# Node module shortcuts
 alias gr='grunt'
 alias grj='grunt jsx'
+alias glp='./node_modules/.bin/gulp'
 
 # Nload defaults to 1992 speeds
 alias nload='nload -i 100000'
