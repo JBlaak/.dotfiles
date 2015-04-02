@@ -29,7 +29,7 @@ alias serve='php -S localhost:8090 -t ./'
 
 # Gcutil
 function gcutil_ssh() {
-	gcutil --project=$1 ssh $2
+	gcloud compute --project=$1 ssh $2
 }
 alias gssh=gcutil_ssh
 
