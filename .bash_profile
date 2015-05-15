@@ -47,7 +47,7 @@ alias behat='vendor/bin/behat'
 alias servebehat='php artisan serve --host=behat.localhost'
 alias rb='php artisan --env=testing migrate && php artisan --env=testing db:seed && grunt && vendor/bin/behat --verbose --stop-on-failure'
 alias sb='php artisan serve --host=behat.localhost'
-alias selenium='xvfb-run --server-args="-screen 0, 1024x768x24" java -jar ~/Tools/selenium-server-standalone-2.44.0.jar'
+alias selenium='xvfb-run --server-args="-screen 0, 1920x1080x24" java -jar ~/Tools/selenium-server-standalone-2.44.0.jar'
 
 # Package managers
 alias ci='composer install'
