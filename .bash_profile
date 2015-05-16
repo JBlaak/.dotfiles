@@ -90,6 +90,9 @@ alias untar='tar -zxvf'
 alias uninstall='sudo apt-get remove'
 alias install='sudo apt-get install'
 
+# When PHPStorm loses keyboard input
+alias doenormaal='ibus restart'
+
 # setting the default editor to Sublime
 export EDITOR='subl -w'
 
