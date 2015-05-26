@@ -93,6 +93,9 @@ alias install='sudo apt-get install'
 # When PHPStorm loses keyboard input
 alias doenormaal='ibus restart'
 
+# Create ssh-tunnel to Mysql in VM
+alias tunnelvm='ssh -N -p 22 root@192.168.68.129 -L 33306:localhost:3306'
+
 # setting the default editor to Sublime
 export EDITOR='subl -w'
 
