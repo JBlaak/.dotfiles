@@ -63,6 +63,7 @@ alias bu='bower update'
 alias gr='grunt'
 alias grj='grunt jsx'
 alias glp='./node_modules/.bin/gulp'
+alias gulp='./node_modules/.bin/gulp'
 
 # Nload defaults to 1992 speeds
 alias nload='nload -i 100000'
