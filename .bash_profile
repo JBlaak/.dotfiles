@@ -9,6 +9,11 @@ function get_git_branch() {
 	echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
 }
 
+# Easy git cloning (i.e. 'clone jblaak/.dotfiles')
+function clone() {
+   git clone git@github.com:$1.git
+}
+
 # Git (not so serious)
 alias wollah='git add . && git commit -am '
 alias whoop='git monsterpull origin '
