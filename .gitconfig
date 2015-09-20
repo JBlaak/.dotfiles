@@ -1,0 +1,13 @@
+[user]
+	name = Joris Blaak
+	email = joris@label305.com
+[alias]
+	fb = !sh -c 'git branch feature_$1 && git checkout feature_$1' -
+	hb = !sh -c 'git branch hotfix_$1 && git checkout hotfix_$1' -
+	hf = !sh -c 'git branch hotfix_$1 && git checkout hotfix_$1' -
+	f = !sh -c 'git branch fix_$1 && git checkout fix_$1' -
+	rmsubmodule = !sh -c 'git submodule deinit $1 && git rm $1' -
+	amend = !sh -c 'git commit -a --amend' -
+[push]
+	default = matching
+
