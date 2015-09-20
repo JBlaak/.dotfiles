@@ -61,7 +61,6 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
 let g:syntastic_javascript_checkers = ['eslint', 'flow']
 
 " YouCompleteMe code completion
@@ -72,3 +71,9 @@ set completeopt-=preview
 " Coloring
 syntax enable
 colorscheme monokai
+
+
+hi SpellBad ctermfg=197 ctermbg=NONE guifg=#f8f8f0 guibg=NONE
+hi SpellCap ctermfg=197 ctermbg=NONE guifg=##f8f8f0 guibg=NONE
+
+
