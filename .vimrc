@@ -5,6 +5,8 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Valloric/YouCompleteMe'
@@ -18,11 +20,21 @@ execute pathogen#infect()
 " line numbers
 set number
 
-" Mappings
+" jk!!
 :imap jk <Esc>
+
+" :Q for quitting, since we're too slow with our shift key
+:command! -bar -bang Q quit<bang>
+
 " Tab navigation like Firefox.
 nnoremap <C-t>     :tabnew<CR>
 inoremap <C-t>     <Esc>:tabnew<C>
+
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " timeout between succesive keystrokes for shortcuts (e.g. jk)
 set timeoutlen=100
