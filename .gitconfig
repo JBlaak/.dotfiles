@@ -8,6 +8,7 @@
 	f = !sh -c 'git branch fix_$1 && git checkout fix_$1' -
 	rmsubmodule = !sh -c 'git submodule deinit $1 && git rm $1' -
 	amend = !sh -c 'git commit -a --amend' -
+	poof = "!git branch --merged | grep  -v '\\*\\|master\\|dev\\|release' | xargs -n 1 git branch -d"
 [push]
 	default = matching
 
