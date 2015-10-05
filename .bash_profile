@@ -19,6 +19,9 @@ function clone() {
    git clone git@github.com:$1.git
 }
 
+# Battery status
+alias battery='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "state|time\ to\ full|percentage|time\ to\ empty"'
+
 # Git (not so serious)
 alias wollah='git add . && git commit -am '
 alias whoop='git monsterpull origin '
@@ -122,6 +125,6 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Styling the PS1 (prefix etc. showing current git branch)
-export PS1="\n【ツ】${BLUE}\w\$([[ -n \$(git branch 2> /dev/null) ]] && echo \"  ${YELLOW}\")\$(parse_git_branch)\n${RESETCOLOR} → "
+export PS1="\n【ツ】${GREEN}\w\$([[ -n \$(git branch 2> /dev/null) ]] && echo \"  ${YELLOW}\")\$(parse_git_branch)\n${RESETCOLOR} → "
 
 
