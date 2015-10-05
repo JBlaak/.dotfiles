@@ -23,8 +23,6 @@ function clone() {
 alias battery='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "state|time\ to\ full|percentage|time\ to\ empty"'
 
 # Git (not so serious)
-alias wollah='git add . && git commit -am '
-alias whoop='git monsterpull origin '
 alias ga='git add .'
 alias gs='git status'
 alias gc='git commit -am'
@@ -33,10 +31,6 @@ alias gl='git pull origin `get_git_branch`'
 alias gb='git branch'
 alias gu='git reset'
 alias gpp='git remote prune origin'
-
-# Switching nginx and mysql on/off
-alias servstart='sudo service nginx start && sudo service mysql start'
-alias servstop='sudo service nginx stop && sudo service mysql stop'
 
 # Serve PHP files the simple way
 alias serve='php -S localhost:8090 -t ./'
@@ -67,15 +61,9 @@ alias selenium='xvfb-run --server-args="-screen 0, 1920x1080x24" java -jar ~/Too
 alias ci='composer install'
 alias cu='composer update'
 alias cda='composer dump-autoload'
-alias cr='composer require --save'
-alias crd='composer require --save-dev'
-alias bi='bower install --save'
-alias bid='bower install --save-dev'
-alias bu='bower update'
 
 # Node module shortcuts
 alias gr='grunt'
-alias grj='grunt jsx'
 alias glp='./node_modules/.bin/gulp'
 alias gulp='./node_modules/.bin/gulp'
 
@@ -92,7 +80,6 @@ alias h='cd ~'
 alias dev='cd ~/Development'
 alias downloads='cd ~/Downloads'
 alias down='cd ~/Downloads'
-alias tools='cd ~/Tools'
 
 # Just handy
 alias la='ls -a'
@@ -106,7 +93,7 @@ alias uninstall='sudo apt-get remove'
 alias install='sudo apt-get install'
 
 # setting the default editor to Sublime
-export EDITOR='subl -w'
+export EDITOR='vim'
 
 # When PHPStorm loses keyboard input
 alias doenormaal='ibus restart'
