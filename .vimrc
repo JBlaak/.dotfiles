@@ -39,6 +39,9 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " timeout between succesive keystrokes for shortcuts (e.g. jk)
 set timeoutlen=100
 
+" no swap file while editing, we never crash
+set noswapfile
+
 " some extra smart stuff
 set autoindent    " always set autoindenting on
 set copyindent    " copy the previous indentation on autoindenting
