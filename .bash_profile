@@ -21,7 +21,7 @@ function clone() {
 
 # Recursively remove files
 function rmf() {
-  find . -type f -name "$1" -exec rm -vf {} \;
+  find . -type f -name "$1" -exec rm -v {} \;
 }
 
 # Battery status
