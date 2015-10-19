@@ -19,6 +19,11 @@ function clone() {
    git clone git@github.com:$1.git
 }
 
+# Recursively remove files
+function rmf() {
+  find . -type f -name "$1" -exec rm -v {} \;
+}
+
 # Battery status
 alias battery='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "state|time\ to\ full|percentage|time\ to\ empty"'
 
