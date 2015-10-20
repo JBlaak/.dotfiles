@@ -11,6 +11,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'bling/vim-airline'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
