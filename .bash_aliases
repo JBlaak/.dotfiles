@@ -37,6 +37,14 @@ alias gb='git branch'
 alias gu='git reset'
 alias gpp='git remote prune origin'
 
+# Open Github
+function github() {
+   local remote=$(git config --get remote.origin.url)
+   local tmp=${remote#*:}
+   local repo=${tmp%.*}
+   $(google-chrome http://www.github.com/$repo >> /dev/null) 
+}
+
 # Serve PHP files the simple way
 alias serve='php -S localhost:8090 -t ./'
 
