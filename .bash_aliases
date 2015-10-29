@@ -95,7 +95,7 @@ alias downloads='cd ~/Downloads'
 alias down='cd ~/Downloads'
 
 # Just handy
-alias la='ls -a'
+alias la='ls -la'
 alias c='clear'
 
 # Tar
