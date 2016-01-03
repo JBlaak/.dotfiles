@@ -50,11 +50,11 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm web-search encode64 composer bower)
+plugins=(git npm composer bower)
 
 # User configuration
 
-  export PATH="/home/jblaak/google-cloud-sdk/bin:/usr/local/heroku/bin:/opt/android-sdk/platform-tools:/opt/composer:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+  export PATH="/home/jblaak/google-cloud-sdk/bin:/usr/local/heroku/bin:/opt/android-sdk/platform-tools:/opt/composer:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/jblaak/Tools/firefox"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -87,3 +87,6 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.zsh_aliases ]; then
 	. ~/.zsh_aliases
 fi
+
+export ANDROID_HOME=/opt/android-sdk
+
