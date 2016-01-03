@@ -1,1 +1,13 @@
+# Ignore everything
 *
+
+# Only my precious dotfiles
+!.vim/colors/monokai.vim
+!.gitignore
+!.gitconfig
+!.ideavimrc
+!.vimrc
+!.zsh_aliases
+!.zshrc
+!package.json
+!README.md
