@@ -15,9 +15,6 @@ Plugin 'bling/vim-airline'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" Another package manager
-execute pathogen#infect()
-
 " line numbers
 set number
 
