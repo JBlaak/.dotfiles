@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/jblaak/.oh-my-zsh
+  export ZSH=/home/joris/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -54,7 +54,7 @@ plugins=(git npm composer bower)
 
 # User configuration
 
-  export PATH="/home/jblaak/google-cloud-sdk/bin:/usr/local/heroku/bin:/opt/android-sdk/platform-tools:/opt/composer:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/jblaak/Tools/firefox"
+  export PATH="/home/joris/google-cloud-sdk/bin:/usr/local/heroku/bin:/opt/android-sdk/platform-tools:/opt/composer:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/joris/Tools/firefox"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
