@@ -74,6 +74,7 @@ alias selenium='xvfb-run --server-args="-screen 0, 1920x1080x24" java -jar ~/Too
 
 # Package managers
 alias ci='composer install'
+alias cif='composer install --ignore-platform-reqs'
 alias cu='composer update'
 alias cda='composer dump-autoload'
 
