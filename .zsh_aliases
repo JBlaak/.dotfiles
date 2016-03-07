@@ -27,6 +27,9 @@ function rmf() {
 # Battery status
 alias battery='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "state|time\ to\ full|percentage|time\ to\ empty"'
 
+# npm
+alias npmr='npm run-script'
+
 # Gradle
 alias gw='./gradlew'
 
