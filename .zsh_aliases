@@ -62,11 +62,21 @@ transfer() {
     rm -f $tmpfile
 }
 
-# Easy git cloning (i.e. 'clone jblaak/.dotfiles')
+# Easy git cloning (i.e. 'clone jblaak/.dotfiles' OR 'cd jblaak && clone .dotfiles')
 function clone() {
-   git clone git@github.com:$1.git
-}
+  arg=$1
+  first=${arg%/*}
+  second=${arg#*/}
 
+  if [[ "$first" = "$second" ]]; then
+    owner="${PWD##*/}"
+    echo "Cloning $owner/$second"
+    git clone git@github.com:$owner/$second.git
+  else
+    echo "Cloning $1"
+    git clone git@github.com:$1.git
+  fi
+}
 # Recursively remove files
 function rmf() {
   find . -type f -name "$1" -exec rm -v {} \;
