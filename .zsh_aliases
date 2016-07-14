@@ -115,6 +115,9 @@ function gcutil_ssh() {
 }
 alias gssh=gcutil_ssh
 
+# Aliases for copy pasing from the web
+alias \$=''
+
 # Artisan
 alias art='php artisan --env=local'
 alias gm='php artisan --env=local generate:migration'
