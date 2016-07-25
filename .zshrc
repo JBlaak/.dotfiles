@@ -54,7 +54,7 @@ plugins=(git npm composer bower)
 
 # User configuration
 
-  export PATH="/home/jblaak/google-cloud-sdk/bin:/usr/local/heroku/bin:/opt/android-sdk/platform-tools:/opt/composer:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+  export PATH="/home/jblaak/google-cloud-sdk/bin:/usr/local/heroku/bin:/opt/android-sdk/platform-tools:/opt/composer:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/android-sdk/platform-tools"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -90,3 +90,15 @@ fi
 
 export ANDROID_HOME=/opt/android-sdk
 
+
+export NVM_DIR="/home/jblaak/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/opt/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/opt/google-cloud-sdk/completion.zsh.inc'
+
+# added by travis gem
+[ -f /home/jblaak/.travis/travis.sh ] && source /home/jblaak/.travis/travis.sh
