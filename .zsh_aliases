@@ -118,10 +118,14 @@ alias gssh=gcutil_ssh
 # Aliases for copy pasing from the web
 alias \$=''
 
+# Quick downloads using aria2c
+alias download='aria2c'
+
 # Artisan
 alias art='php artisan --env=local'
 alias gm='php artisan --env=local generate:migration'
 alias artt='php artisan --env=testing'
+alias am='php artisan migrate:refresh'
 alias ams='php artisan migrate:refresh --seed'
 
 # PHPUnit testing
@@ -144,6 +148,11 @@ alias cda='composer dump-autoload'
 alias gr='grunt'
 alias glp='./node_modules/.bin/gulp'
 alias gulp='./node_modules/.bin/gulp'
+
+# React native
+alias rns='react-native start'
+alias rna='react-native run-android'
+alias adbrev='adb reverse tcp:8081 tcp:8081'
 
 # Nload defaults to 1992 speeds
 alias nload='nload -i 100000'
