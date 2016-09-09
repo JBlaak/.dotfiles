@@ -94,11 +94,3 @@ export ANDROID_HOME=/opt/android-sdk
 export NVM_DIR="/home/jblaak/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# The next line updates PATH for the Google Cloud SDK.
-source '/opt/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/opt/google-cloud-sdk/completion.zsh.inc'
-
-# added by travis gem
-[ -f /home/jblaak/.travis/travis.sh ] && source /home/jblaak/.travis/travis.sh
