@@ -1,6 +1,9 @@
 [user]
 	name = Joris Blaak
 	email = joris@label305.com
+        signingkey = 9AB12E0391A2FE24
+[commit]
+        gpgsign = true
 [alias]
 	fb = !sh -c 'git branch feature_$1 && git checkout feature_$1' -
 	hb = !sh -c 'git branch hotfix_$1 && git checkout hotfix_$1' -
