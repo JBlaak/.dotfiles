@@ -54,7 +54,7 @@ plugins=(git npm composer bower command-not-found)
 
 # User configuration
 
-  export PATH="/home/jblaak/google-cloud-sdk/bin:/usr/local/heroku/bin:/opt/android-sdk/platform-tools:/opt/composer:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/android-sdk/platform-tools"
+  export PATH="/home/jblaak/google-cloud-sdk/bin:/usr/local/heroku/bin:/opt/android-sdk/platform-tools:/opt/composer:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/android-sdk/platform-tools:/home/jblaak/Android/Sdk/platform-tools"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -94,3 +94,6 @@ export ANDROID_HOME=/opt/android-sdk
 export NVM_DIR="/home/jblaak/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

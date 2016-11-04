@@ -1,7 +1,7 @@
 [user]
 	name = Joris Blaak
 	email = joris@label305.com
-        signingkey = 9AB12E0391A2FE24
+        signingkey = 05E4C45662E4AF5D
 [commit]
         gpgsign = true
 [alias]
