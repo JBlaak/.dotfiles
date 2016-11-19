@@ -9,6 +9,7 @@ function get_git_branch() {
 	echo `git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
 }
 
+
 # Calculator!
 function calc {
     echo "$@" | bc -l
@@ -182,10 +183,9 @@ alias install='sudo apt-get install'
 # setting the default editor to Sublime
 export EDITOR='vim'
 
-# When PHPStorm loses keyboard input
-alias doenormaal='ibus restart'
-
-# Create ssh-tunnel to Mysql in VM
-alias tunnelvm='ssh -N -p 2222 root@127.0.0.1 -L 33306:localhost:3306'
-
+# some stuff to communicate with Henk
+alias henk='ssh henk@jblaak.nl'
+function upload() {
+	scp $1 henk@jblaak.nl:/home/henk/Downloads 
+}
 
