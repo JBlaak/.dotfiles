@@ -188,4 +188,7 @@ alias henk='ssh henk@jblaak.nl'
 function upload() {
 	scp $1 henk@jblaak.nl:/home/henk/Downloads 
 }
+function share() {
+	scp $1 henk@jblaak.nl:/mnt/3792938F6747A7CE/HenkServerPublic
+}
 
