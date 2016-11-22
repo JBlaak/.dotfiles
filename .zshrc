@@ -94,7 +94,7 @@ export ANDROID_HOME=/opt/android-sdk
 export NVM_DIR="/home/jblaak/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-bindkey '^M' autosuggest-execute
+bindkey '^_' autosuggest-execute
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
