@@ -75,6 +75,6 @@ colorscheme monokai
 
 
 hi SpellBad ctermfg=197 ctermbg=NONE guifg=#f8f8f0 guibg=NONE
-hi SpellCap ctermfg=197 ctermbg=NONE guifg=##f8f8f0 guibg=NONE
+hi SpellCap ctermfg=197 ctermbg=NONE guifg=#f8f8f0 guibg=NONE
 
 
