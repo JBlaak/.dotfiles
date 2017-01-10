@@ -12,6 +12,7 @@
 	rmsubmodule = !sh -c 'git submodule deinit $1 && git rm $1' -
 	amend = !sh -c 'git commit -a --amend' -
 	poof = !sh -c \"git remote prune origin && git branch --merged | grep  -v '\\*\\|master\\|dev\\|release\\|android\\|stable' | xargs -n 1 git branch -d\"
+	      fixgitignore = "!sh -c \"git rm -r --cached . && git add .\"
 [push]
 	default = matching
 
