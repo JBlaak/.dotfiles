@@ -190,6 +190,8 @@ function ymd() {
 }
 
 
+# Weather!
+alias weather='curl http://wttr.in/enschede'
 
 # setting the default editor to Sublime
 export EDITOR='vim'
