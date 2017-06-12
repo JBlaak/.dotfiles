@@ -197,7 +197,7 @@ alias weather='curl http://wttr.in/enschede'
 export EDITOR='vim'
 
 # some stuff to communicate with Henk
-alias henk='ssh henk@jblaak.nl'
+alias henk='ssh henk@jblaak.nl -p 722'
 function upload() {
 	scp $1 henk@jblaak.nl:/home/henk/Downloads 
 }
