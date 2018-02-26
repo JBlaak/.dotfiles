@@ -193,10 +193,7 @@ export EDITOR='vim'
 
 # some stuff to communicate with Henk
 alias henk='ssh henk@jblaak.nl -p 722'
-function upload() {
-	scp $1 henk@jblaak.nl:/home/henk/Downloads 
-}
-function share() {
-	scp $1 henk@jblaak.nl:/mnt/3792938F6747A7CE/HenkServerPublic
+function tunnelhenk() {
+	ssh -L $1:127.0.0.1:$1 henk@jblaak.nl -p 722
 }
 
