@@ -50,7 +50,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm composer bower command-not-found, zsh-autosuggestions)
+plugins=(git npm zsh-autosuggestions)
 
 # User configuration
 
@@ -97,4 +97,3 @@ export NVM_DIR="/home/jblaak/.nvm"
 bindkey '^_' autosuggest-execute
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
