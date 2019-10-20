@@ -1,13 +1,5 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
-"Vundle Plugins
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
-Plugin 'Raimondi/delimitMate'
-Plugin 'bling/vim-airline'
-call vundle#end()            " required
 filetype plugin indent on    " required
 
 " line numbers
