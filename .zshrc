@@ -54,7 +54,7 @@ plugins=(git npm zsh-autosuggestions)
 
 # User configuration
 
-  export PATH="/home/jblaak/google-cloud-sdk/bin:/usr/local/heroku/bin:/opt/android-sdk/platform-tools:/opt/composer:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/android-sdk/platform-tools:/home/jblaak/Android/Sdk/platform-tools"
+  export PATH="/home/jblaak/google-cloud-sdk/bin:/usr/local/heroku/bin:/opt/android-sdk/platform-tools:/opt/composer:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/android-sdk/platform-tools:/home/jblaak/Android/Sdk/platform-tools:/snap/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
