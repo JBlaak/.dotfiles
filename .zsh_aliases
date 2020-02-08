@@ -188,6 +188,12 @@ alias yr='yarn remove'
 # Weather!
 alias weather='curl http://wttr.in/enschede'
 
+# Take a not using vim-notes
+function note() {
+	d=`date +%Y%m%d`
+	vim -c ":Note $d - $1"
+}
+
 # setting the default editor to Sublime
 export EDITOR='vim'
 

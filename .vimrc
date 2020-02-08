@@ -26,4 +26,7 @@ colorscheme monokai
 hi SpellBad ctermfg=197 ctermbg=NONE guifg=#f8f8f0 guibg=NONE
 hi SpellCap ctermfg=197 ctermbg=NONE guifg=#f8f8f0 guibg=NONE
 
+:let g:notes_directories = ['~/Desktop/Notes']
+:let g:notes_suffix = '.md'
+:let g:notes_shadowdir = '~/.vim-notes/shadow'
 
